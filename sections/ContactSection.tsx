@@ -43,9 +43,9 @@ export default function ContactSection() {
 
         {/* Left — Headline */}
         <div className="flex-1 relative flex flex-col justify-center">
-          {/* Sticker */}
+          {/* Sticker — inline on mobile, absolute on lg+ */}
           <motion.div
-            className="absolute -top-8 left-4 lg:-top-12 lg:-left-8 z-20"
+            className="lg:absolute lg:-top-12 lg:-left-8 self-start mb-4 lg:mb-0 z-20"
             initial={{ rotate: -6 }}
             whileHover={{ rotate: 0 }}
             transition={{ duration: 0.2 }}

@@ -31,7 +31,7 @@ const stateLibs = [
 ];
 
 export const metadata = {
-  title: "Stack — Franky",
+  title: "Stack - Franky",
   description: "The tools, languages, and philosophies powering my digital constructions.",
 };
 

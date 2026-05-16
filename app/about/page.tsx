@@ -4,7 +4,7 @@ import JourneySection from "@/sections/JourneySection";
 import HobbiesSection from "@/sections/HobbiesSection";
 
 export const metadata = {
-  title: "About — Franky",
+  title: "About - Franky",
   description:
     "The human behind the code. Frontend engineer based in Sumenep, Indonesia.",
 };
