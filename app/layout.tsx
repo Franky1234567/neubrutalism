@@ -21,9 +21,45 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Franky - Frontend Engineer",
+  metadataBase: new URL("https://franky.my.id"),
+  title: {
+    default: "Franky Rifdulmannan - Frontend Engineer",
+    template: "%s | Franky Rifdulmannan",
+  },
   description:
-    "Frontend engineer building hospitality software in Indonesia. 1 year shipping production code at Guestpedia.",
+    "Frontend engineer building hospitality software in Indonesia. 1 year shipping production code at Guestpedia. Specializing in React, Next.js, and TypeScript.",
+  keywords: [
+    "Franky Rifdulmannan",
+    "Franky",
+    "Frontend Engineer",
+    "React Developer",
+    "Next.js Developer",
+    "Indonesia",
+    "Sumenep",
+    "Guestpedia",
+    "Web Developer Indonesia",
+  ],
+  authors: [{ name: "Franky Rifdulmannan", url: "https://franky.my.id" }],
+  creator: "Franky Rifdulmannan",
+  openGraph: {
+    type: "website",
+    url: "https://franky.my.id",
+    title: "Franky Rifdulmannan - Frontend Engineer",
+    description:
+      "Frontend engineer building hospitality software in Indonesia. Specializing in React, Next.js, and TypeScript.",
+    siteName: "Franky Rifdulmannan",
+    images: [{ url: "/logo-.png", width: 512, height: 512, alt: "Franky Rifdulmannan" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "Franky Rifdulmannan - Frontend Engineer",
+    description:
+      "Frontend engineer building hospitality software in Indonesia.",
+    images: ["/logo-.png"],
+  },
+  icons: {
+    icon: "/logo-.png",
+  },
 };
 
 export default function RootLayout({
@@ -43,6 +79,25 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Franky Rifdulmannan",
+              url: "https://franky.my.id",
+              email: "frengkyrifdulm@gmail.com",
+              jobTitle: "Frontend Engineer",
+              worksFor: { "@type": "Organization", name: "Guestpedia" },
+              address: { "@type": "PostalAddress", addressLocality: "Sumenep", addressCountry: "ID" },
+              sameAs: [
+                "https://github.com/Franky1234567",
+                "https://www.linkedin.com/in/frankyrifdulmannan/",
+              ],
+            }),
+          }}
+        />
         {children}
       </body>
     </html>

@@ -4,9 +4,9 @@ import JourneySection from "@/sections/JourneySection";
 import HobbiesSection from "@/sections/HobbiesSection";
 
 export const metadata = {
-  title: "About - Franky",
+  title: "About",
   description:
-    "The human behind the code. Frontend engineer based in Sumenep, Indonesia.",
+    "The human behind the code. Franky Rifdul mannan, frontend engineer based in Sumenep, Indonesia.",
 };
 
 export default function AboutPage() {

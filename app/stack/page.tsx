@@ -31,8 +31,8 @@ const stateLibs = [
 ];
 
 export const metadata = {
-  title: "Stack - Franky",
-  description: "The tools, languages, and philosophies powering my digital constructions.",
+  title: "Stack",
+  description: "The tools, languages, and philosophies powering Franky Rifdulmannan's digital constructions. React, Next.js, TypeScript, and more.",
 };
 
 export default function StackPage() {
