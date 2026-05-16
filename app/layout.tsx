@@ -21,7 +21,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://franky.my.id"),
+  metadataBase: new URL("https://www.franky.my.id"),
   title: {
     default: "Franky Rifdulmannan - Frontend Engineer",
     template: "%s | Franky Rifdulmannan",
@@ -39,11 +39,11 @@ export const metadata: Metadata = {
     "Guestpedia",
     "Web Developer Indonesia",
   ],
-  authors: [{ name: "Franky Rifdulmannan", url: "https://franky.my.id" }],
+  authors: [{ name: "Franky Rifdulmannan", url: "https://www.franky.my.id" }],
   creator: "Franky Rifdulmannan",
   openGraph: {
     type: "website",
-    url: "https://franky.my.id",
+    url: "https://www.franky.my.id",
     title: "Franky Rifdulmannan - Frontend Engineer",
     description:
       "Frontend engineer building hospitality software in Indonesia. Specializing in React, Next.js, and TypeScript.",
@@ -89,7 +89,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Franky Rifdulmannan",
-              url: "https://franky.my.id",
+              url: "https://www.franky.my.id",
               email: "frengkyrifdulm@gmail.com",
               jobTitle: "Frontend Engineer",
               worksFor: { "@type": "Organization", name: "Guestpedia" },
